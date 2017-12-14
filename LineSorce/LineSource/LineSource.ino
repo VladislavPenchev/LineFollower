@@ -1,16 +1,16 @@
 #include <QTRSensors.h>
 
-int firstSensorDigital = 7;                                                   
-int secondSensor = 5;
-int thirdSensor = 4;
-int fourthSensor = 3;
-int fifthSensor = 2;
-int sixthSensor = 1;
-int seventhSensor = 0;
-int eighthSensorDigital = 8;
+int firstSensor_Digital = 7;                                                   
+int secondSensor_ANALOG = 5;
+int thirdSensor_ANALOG = 4;
+int fourthSensor_ANALOG = 3;
+int fifthSensor_ANALOG = 2;
+int sixthSensor_ANALOG = 1;
+int seventhSensor_ANALOG = 0;
+int eighthSensor_Digital = 8;
 
 
-int arrayOfSensors[8] = {firstSensorDigital,secondSensor,thirdSensor,fourthSensor,fifthSensor,sixthSensor,seventhSensor,eighthSensorDigital};
+int arrayOfSensors[8] = {firstSensor_Digital,secondSensor_ANALOG,thirdSensor_ANALOG,fourthSensor_ANALOG,fifthSensor_ANALOG,sixthSensor_ANALOG,seventhSensor_ANALOG,eighthSensor_Digital};
 
 int state[8] = {HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH};      // the current state of the output pin
 int reading[8];           // the current reading from the input pin
@@ -23,14 +23,14 @@ long debounce = 200;   // the debounce time, increase if the output flickers
 
 void setup()
 {
-  pinMode(firstSensorDigital, INPUT);
-  pinMode(secondSensor, INPUT);
-  pinMode(thirdSensor, INPUT);
-  pinMode(fourthSensor, INPUT);
-  pinMode(fifthSensor, INPUT);
-  pinMode(sixthSensor, INPUT);
-  pinMode(seventhSensor, INPUT);
-  pinMode(eighthSensorDigital, INPUT);
+  pinMode(firstSensor_Digital, INPUT);
+  pinMode(secondSensor_ANALOG, INPUT);
+  pinMode(thirdSensor_ANALOG, INPUT);
+  pinMode(fourthSensor_ANALOG, INPUT);
+  pinMode(fifthSensor_ANALOG, INPUT);
+  pinMode(sixthSensor_ANALOG, INPUT);
+  pinMode(seventhSensor_ANALOG, INPUT);
+  pinMode(eighthSensor_Digital, INPUT);
   
   Serial.begin(9600);
 }
