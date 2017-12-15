@@ -1,13 +1,14 @@
 #include <QTRSensors.h>
 
-int firstSensor_Digital = 7;                                                   
-int secondSensor_ANALOG = 5;
-int thirdSensor_ANALOG = 4;
-int fourthSensor_ANALOG = 3;
-int fifthSensor_ANALOG = 2;
-int sixthSensor_ANALOG = 1;
 int seventhSensor_ANALOG = 0;
-int eighthSensor_Digital = 8;
+int sixthSensor_ANALOG = 1;
+int fifthSensor_ANALOG = 2;
+int fourthSensor_ANALOG = 3;
+int thirdSensor_ANALOG = 4;                                                  
+int secondSensor_ANALOG = 5;
+
+int firstSensor_Digital = 8; 
+int eighthSensor_Digital = 9;
 
 
 int arrayOfSensors[8] = {firstSensor_Digital,secondSensor_ANALOG,thirdSensor_ANALOG,fourthSensor_ANALOG,fifthSensor_ANALOG,sixthSensor_ANALOG,seventhSensor_ANALOG,eighthSensor_Digital};
